@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation | Monika & Srimanth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-temple-layer"></div>
+
+        <div class="hero-content container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">Together with our families</p>
+
+            <h1>
+              <span id="brideName">Monika</span>
+              <span class="amp">&</span>
+              <span id="groomName">Srimanth</span>
+            </h1>
+
+            <p class="subtext">
+              cordially invite you to join the ocassion of our wedding on
+            </p>
+            <p class="date-line" id="mainDate">Saturday, May 9, 2026</p>
+
+            <div class="hero-actions">
+              <a href="#events" class="btn btn-primary">View Events</a>
+              <a href="#rsvp" class="btn btn-secondary">
+                Confirm Your Presence
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrap">
+            <div class="hero-image-card">
+              <img
+                src="./images/couple.jpeg"
+                alt="Monika and Srimanth"
+                class="hero-image"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="intro container">
+          <div class="section-title">
+            <p class="label">Invitation</p>
+            <h2>We would be delighted by your presence</h2>
+          </div>
+          <p class="intro-copy">
+            Join us as we celebrate our wedding with love, family traditions,
+            colorful rituals, music, and joyful Telugu festivities.
+          </p>
+        </section>
+
+        <section id="events" class="events-section container">
+          <div class="section-title">
+            <p class="label">Event Lineup</p>
+            <h2>Celebrations in order</h2>
+          </div>
+
+          <div class="timeline" id="timeline">
+            <article class="event-card">
+              <div class="event-order">01</div>
+              <div class="event-body">
+                <h3>Haldi</h3>
+                <p class="meta">
+                  <strong>Time:</strong> Friday, May 8, 2026 · 10:00 AM onwards
+                </p>
+                <p class="meta">
+                  <strong>Location:</strong> 6451 Wyatt St, Celina, Ohio
+                </p>
+                <p class="meta">
+                  <strong>Dress Code:</strong> Shades of yellow outfits
+                </p>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-order">02</div>
+              <div class="event-body">
+                <h3>Sangeeth</h3>
+                <p class="meta">
+                  <strong>Time:</strong> Friday, May 8, 2026 · 6:00 PM onwards
+                </p>
+                <p class="meta">
+                  <strong>Location:</strong> 6451 Wyatt St, Celina, Ohio
+                </p>
+                <p class="meta">
+                  <strong>Dress Code:</strong> Blingy festive outfits
+                </p>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-order">03</div>
+              <div class="event-body">
+                <h3>Pelli Kuthuru &amp; Pelli Koduku</h3>
+                <p class="meta">
+                  <strong>Time:</strong> Saturday, May 9, 2026 · 9 AM onwards
+                </p>
+                <p class="meta">
+                  <strong>Location:</strong> 6451 Wyatt St, Celina, Ohio
+                </p>
+                <p class="meta">
+                  <strong>Dress Code:</strong> Vintage traditional look
+                </p>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-order">04</div>
+              <div class="event-body">
+                <h3>Wedding</h3>
+                <p class="meta">
+                  <strong>Time:</strong> Saturday, May 9, 2026 · 7:00 PM onwards
+                  <br />
+                  <strong>Muhurtam:</strong> 9:30 PM
+                </p>
+                <p class="meta">
+                  <strong>Location:</strong> 2615 Temple Ln, Beavercreek, Ohio,
+                  45431
+                </p>
+                <p class="meta">
+                  <strong>Dress Code:</strong> Traditional wedding attire
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="rsvp" class="rsvp-section container">
+          <div class="section-title">
+            <p class="label">RSVP</p>
+            <h2>Tell us which events you’ll attend</h2>
+          </div>
+
+          <form
+            id="rsvpForm"
+            class="rsvp-form"
+            action="https://formspree.io/f/mreyvljg"
+            method="POST"
+            novalidate
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Wedding RSVP - Monika & Srimanth"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <div class="grid two">
+              <label>
+                Full Name
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="attendance-block">
+              <p class="block-title">Event-wise RSVP</p>
+              <div class="attendance-item" data-event-name="Haldi">
+                <div class="attendance-header">
+                  <div>
+                    <strong>Haldi</strong>
+                    <span>Friday, May 8 · 10:00 AM onwards</span>
+                  </div>
+                </div>
+
+                <div class="inline-options">
+                  <label>
+                    <input
+                      type="radio"
+                      name="Haldi_Status"
+                      value="Attending"
+                      required
+                    />
+                    Attending
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="Haldi_Status"
+                      value="Not Attending"
+                    />
+                    Not Attending
+                  </label>
+                </div>
+
+                <div class="guest-count-wrap hidden">
+                  <label>
+                    Guest Count for Haldi (including you)
+                    <input
+                      type="number"
+                      name="haldi_count"
+                      min="1"
+                      max="20"
+                      placeholder="Enter guest count"
+                      class="guest-input"
+                    />
+                  </label>
+                </div>
+              </div>
+
+              <div class="attendance-item" data-event-name="Sangeeth">
+                <div class="attendance-header">
+                  <div>
+                    <strong>Sangeeth</strong>
+                    <span>Friday, May 8 · 6:00 PM onwards</span>
+                  </div>
+                </div>
+
+                <div class="inline-options">
+                  <label>
+                    <input
+                      type="radio"
+                      name="Sangeeth_Status"
+                      value="Attending"
+                      required
+                    />
+                    Attending
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="Sangeeth_Status"
+                      value="Not Attending"
+                    />
+                    Not Attending
+                  </label>
+                </div>
+
+                <div class="guest-count-wrap hidden">
+                  <label>
+                    Guest Count for Sangeeth (including you)
+                    <input
+                      type="number"
+                      name="sangeeth_count"
+                      min="1"
+                      max="20"
+                      placeholder="Enter guest count"
+                      class="guest-input"
+                    />
+                  </label>
+                </div>
+              </div>
+
+              <div
+                class="attendance-item"
+                data-event-name="Pelli Kuthuru &amp; Pelli Koduku"
+              >
+                <div class="attendance-header">
+                  <div>
+                    <strong>Pelli Kuthuru &amp; Pelli Koduku</strong>
+                    <span>Saturday, May 9 · 9:00 AM onwards</span>
+                  </div>
+                </div>
+
+                <div class="inline-options">
+                  <label>
+                    <input
+                      type="radio"
+                      name="pelli_kuthuru_koduku_status"
+                      value="Attending"
+                      required
+                    />
+                    Attending
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="pelli_kuthuru_koduku_status"
+                      value="Not Attending"
+                    />
+                    Not Attending
+                  </label>
+                </div>
+
+                <div class="guest-count-wrap hidden">
+                  <label>
+                    Guest Count for Pelli Kuthuru &amp; Pelli Koduku (including
+                    you)
+                    <input
+                      type="number"
+                      name="pelli_kuthuru_koduku_status"
+                      min="1"
+                      max="20"
+                      placeholder="Enter guest count"
+                      class="guest-input"
+                    />
+                  </label>
+                </div>
+              </div>
+
+              <div class="attendance-item" data-event-name="Wedding">
+                <div class="attendance-header">
+                  <div>
+                    <strong>Wedding</strong>
+                    <span>
+                      Saturday, May 9 · 7:00 PM onwards | Muhurtam: 9:30 PM
+                    </span>
+                  </div>
+                </div>
+
+                <div class="inline-options">
+                  <label>
+                    <input
+                      type="radio"
+                      name="Wedding_Status"
+                      value="Attending"
+                      required
+                    />
+                    Attending
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="Wedding_Status"
+                      value="Not Attending"
+                    />
+                    Not Attending
+                  </label>
+                </div>
+
+                <div class="guest-count-wrap hidden">
+                  <label>
+                    Guest Count for Wedding (including you)
+                    <input
+                      type="number"
+                      name="pelli_count"
+                      min="1"
+                      max="20"
+                      placeholder="Enter guest count"
+                      class="guest-input"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- <label>
+              Note for the family (optional)
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Blessings, meal preferences, or any note"
+              ></textarea>
+            </label> -->
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Submit RSVP</button>
+              <!-- <p class="helper-text">
+                Once connected to Formspree, each RSVP submission will be sent
+                to your email.
+              </p> -->
+            </div>
+          </form>
+
+          <div id="formResult" class="form-result hidden"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
